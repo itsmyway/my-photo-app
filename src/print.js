@@ -1,3 +1,3 @@
 export default function printMe() {
-   console.log('print me new !');
+   console.log('print me hello new !');
 }
