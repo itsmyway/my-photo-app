@@ -4,8 +4,7 @@ const fs = require('fs');
 
 module.exports = {
   entry: {
-    app: './src/app.js',
-    print: './src/print.js'
+    app: './src/app.js'
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -49,6 +48,17 @@ module.exports = {
         use: [
           'file-loader'
         ]
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
+      {
+        test: /\.html$/,
+        loader: 'mustache-loader'
+        // loader: 'mustache-loader?minify'
+        // loader: 'mustache-loader?{ minify: { removeComments: false } }'
+        // loader: 'mustache-loader?noShortcut'
       }
     ]
   },
