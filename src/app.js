@@ -40,7 +40,7 @@ export class imageGallery{
   setDOM(photos){
     /** Mark up for Image Gallery **/
     const galleryMarkup = `
-    ${this.photos.map(photo => `<a href="#${photo.id}"><img src=${photo.src} class="myPhotos"/></a>`).join('')}
+    ${this.photos.map(photo => `<a class="myPhotos" href="#${photo.id}"><img src=${photo.src} /></a>`).join('')}
     `;
     /** Mark up for LightBox Image and Caption **/
     const lightBoxMarkup = `
