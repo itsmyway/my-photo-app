@@ -2,15 +2,15 @@
   "name": "my-photo-app",
   "version": "1.0.0",
   "description": "Photo app using Public API like flickr or Google Photos API",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
-    "watch": "webpack --watch",
-    "build": "webpack"
+    "dev": "webpack-dev-server --devtool eval --content-base build/ --colors --hot",
+    "start": "node server.js",
+    "postinstall": "webpack -p --config webpack.prod.config.js --progress"
   },
   "author": "hanupriya",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^7.1.2",
@@ -33,9 +33,7 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "webpack": "^3.5.5"
-  },
-  "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
+    "express": "^4.15.4",
     "mustache-loader": "^1.0.0"
-  }
 }
