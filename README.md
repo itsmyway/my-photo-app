@@ -8,7 +8,7 @@ Has webpack dev server set for auto reload with eslint and sass loader
   - [npm start](#npm-start)
   - [npm run build](#npm-run-build)
   - [npm run eject](#npm-run-eject)
-- [Project Highlights](#Project Highlights)
+- [Project Highlights](#project-highlights)
 
 ## How To Install And Run The App
 
