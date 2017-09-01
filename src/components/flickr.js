@@ -40,6 +40,7 @@ export class Flickr{
   fetchImageURLs(photosArr){
     this.photos = photosArr.map( photo => {
       photo['src'] = 'http://farm' + photo['farm'] + '.static.flickr.com/'+ photo['server'] + '/' +  photo['id'] + '_' + photo['secret'] + '_b.jpg'
+      photo['src_thumb'] = 'http://farm' + photo['farm'] + '.static.flickr.com/'+ photo['server'] + '/' +  photo['id'] + '_' + photo['secret'] + '_s.jpg'
       photo['title'] = photo['title']
       return photo
     })
