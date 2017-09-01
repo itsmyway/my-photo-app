@@ -8,6 +8,7 @@ Has webpack dev server set for auto reload with eslint and sass loader
   - [npm start](#npm-start)
   - [npm run build](#npm-run-build)
   - [npm run eject](#npm-run-eject)
+- [Project Highlights](#Project Highlights)
 
 ## How To Install And Run The App
 
@@ -41,3 +42,16 @@ It correctly bundles the JS/CSS and optimizes the build for the best performance
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
+
+## Project Highlights
+
+* WebPack based - Loaders for ES6, SCSS, JSON and esLinted
+* Three Components 
+  * utility.js ( For building API URLs and Requesting Data )
+  * flickr.js ( Build Flickr URL and Parse Data )
+  * app.js ( Main JS file for Image Gallery and LightBox View) 
+* Input - Flickr getPublicPhoto API with 15 Images per page with search tag 'golden retriever' 
+        - In case of failure, please update the API Key
+        - Code currently has a backup photos.JSON to show the actual data
+      
+
