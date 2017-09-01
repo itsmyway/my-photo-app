@@ -53,5 +53,8 @@ Your app is ready to be deployed!
 * Input - Flickr getPublicPhoto API with 15 Images per page with search tag 'golden retriever' 
         - In case of failure, please update the API Key
         - Code currently has a backup photos.JSON to show the actual data
+* Events Handled - Opens Clicked Image on a LightBox View with thumbnails for further navigation
+* Next, Prev links are visible on image: hover; Right arrow and left arrow works for navigation too
+* Close Lightbox button, click on lightbox body and escape key closes lightbox and takes back to image gallery page
       
 
