@@ -14,7 +14,7 @@ Has webpack dev server set for auto reload with eslint and sass loader
 
 * clone/download the project;
 * In the project folder do `npm install`.
-* Upon successful `install`, do `npm start`, it should launch the browser with app at `http://localhost:3000/`
+* Upon successful `install`, do `npm start`, it should launch the browser with app at `http://localhost:8080/`
 
 ## Available Scripts
 
